@@ -104,13 +104,60 @@ h6 {
   border-right: 1px solid #ddd;
   padding: 20px;
 }
+.logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.logo > svg {
+  width: 60px;
+  height: 60px;
+  color: white;
+}
+svg {
+  width: 30px;
+  height: 30px;
+}
+li {
+  list-style: none;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: start;
+  padding: 0 0;
+}
 .header {
   grid-column: 2 / 3;
   background-color: white;
   border-bottom: 1px solid #ddd;
+  display: grid;
+  grid-template-columns: max(1fr, 0.6vw) 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  padding: 0 20px;
+}
+.search-bar {
   display: flex;
   align-items: center;
-  padding: 0 20px;
+  gap: 10px;
+  padding: 5px 10px;
+}
+input[type="text"] {
+  background-color: #e2e8f0;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  font-size: 16px;
+  width: 100%;
+}
+.user-profile {
+  grid-column: 3/5;
+}
+.user-greeting {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: start;
 }
 .content {
   grid-column: 2 / 3;
@@ -143,4 +190,40 @@ h6 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
+}
+.search-bar > img {
+  width: 40px;
+  height: 40px;
+}
+.alert-button {
+  background: url(img/bell-ring-outline.svg) no-repeat center;
+  background-size: 24px 24px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+.collect-button {
+  background: url("img/star-plus-outline.svg") no-repeat center;
+  background-size: 24px 24px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+.like-button {
+  background: url("img/eye-plus-outline.svg") no-repeat center;
+  background-size: 24px 24px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+.share-button {
+  background: url("img/share-variant-outline.svg") no-repeat center;
+  background-size: 24px 24px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
 }
